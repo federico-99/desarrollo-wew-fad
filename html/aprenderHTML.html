@@ -18,36 +18,33 @@
       <h3><a href="/index.html">Inicio</a></h3>
       <nav>
         <ul>
-          <li>
-            <p>"header" es la cabecera de la estrucutura</p>
-          </li>
-          <li>
-            <p>"nav" es la barra de navegacion en la cabecera</p>
-          </li>
-          <li>
-            <p>"ul" es una lista desordenada, creo</p>
-          </li>
-          <li>
-            <p>"ol" es una lista desordenada</p>
-          </li>
-          <li>"li" es la etiqueta de lista</li>
+          <li><a href="#main">main</a></li>
+          <li><a href="#seccion">seccion</a></li>
+          <li><a href="#article">article</a></li>
+          <li><a href="#aside">aside</a></li>
+          <li><a href="#selectores">selectores</a></li>
+          <li><a href="#footer">footer</a></li>
+          <li><a href="#contenido-y-texto">Contenido multimedia y texto</a></li>
+          <li><a href="#atributos">atributos</a></li>
+          <li><a href="#atributos">atributos</a></li>
+          <li><a href="estructura-semantica">Estructura semantica</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main">
       <h1>Soy el contenido principal</h1>
       <p>Acá va el corazon del contenido</p>
     </main>
 
-    <section>
+    <section id="seccion">
       <p>
         Esta es una de las secciones del contenido en la pagina, una"tematica" o
         "categoria", una seccion
       </p>
     </section>
 
-    <section>
+    <section id="article">
       <article>
         <p>
           Este es un articulo, es independiente al contenido de la pagina, puede
@@ -59,7 +56,7 @@
       </article>
     </section>
 
-    <section>
+    <section id="aside">
       <aside>
         <p>
           aside se utiliza para enmarcar contenido indirectamente relacionado
@@ -69,13 +66,13 @@
       </aside>
     </section>
 
-    <section>
+    <section id="selectores">
       <p>Utilizar selectores</p>
       <p id="idParrafo">tambien id</p>
       <p class="Clase">Clases</p>
     </section>
 
-    <section>
+    <section id="footer">
       <footer>
         <p>
           Footer es el pie de pagina en el que se suelen enlazar links de
@@ -84,7 +81,7 @@
       </footer>
     </section>
 
-    <section>
+    <section id="contenido-y-texto">
       <h3>Contenido y texto</h3>
 
       <p>
@@ -95,11 +92,11 @@
       <p>"p" es la etiqueta que usamos en los parrafos</p>
 
       <p>
-        "a" es la etiqueta que usamos para enlaces externos o para enlaces
-        externos con los siguente astributos:
+        "a" es la etiqueta que usamos para enlaces externos o para enlaces internos. puede conterner los siguientes atributos:
       </p>
 
-      <p>"src"</p>
+      <p>"src" que se utilizan para links externos al documento ya seaqn otros documentos o paginas wew</p>
+      <p>"href" se utiliza como link interno para navegar dentro del documento, por ejemplo.</p>
       <p>"alt"</p>
       <p>"whidth"</p>
       <p>"Heigt"</p>
@@ -148,6 +145,15 @@
       <h3>Multimedia</h3>
 
       <p>
+        "img" es la etiqueta utilizada para insertar imagenes, es una etiqueta "bacia" por lo tanto no tiene cierre <br> 
+        sus atributos son: <br> "src" donde se coloca la ruta de origen de la imagen, "alt" donde se describe lo que hay en la imagen por cualquier imprevisto y para dar accesibilidad a personas con discapacidad visual, "whidth" se utiliza para definir el ancho de la imagen y "Heigt" para definir el alto de la imagen. aunque el aspecto visual es mejor modificarlo con CSS.<br>
+        <p>
+          tambien podemos combinar "img" y "a" de la siguiente manera: <br>
+          a href="https://www.google.com"><br>
+            img src="https://via.placeholder.com/150" alt="Ir a Google"><br>
+          /a
+        </p>
+
         "audio" audio embebecido. atributos: <br />
         "src" <br />
         "controls"
@@ -166,6 +172,69 @@
         "link" es una hoja de estilo externa. atributos: <br />
         "rel="stylesheet" <br />
         "href"
+      </p>
+    </section>
+
+    <section id="atributos">
+      <h3>atributos</h3>
+      <p>
+        "id" se utiliza en cualquier elemento, le da una identidicacion unica a cualquier elemento, es muy util a la hora de dar funcionalidades o estilos a los elementos individualmente
+      </p>
+      <p>
+        "class" se utiliza en cualquier elemento, mayormente se le da la misma clase a un grupo de elementos para dar estilo o funcionalidad en serie a varios elementos, ayuda a repetir menos el codigo CSS o js
+      </p>
+      <p>
+        "title" aplica a casi todos los elementos, su funcion es mostrar el titulo que pongamos al elemento cuando colocamos el cursor encima de este
+      </p>
+      <p>
+        "alt" se utiliza en la etiqueta "img" para describir la imagen que aloja la etiqueta
+      </p>
+      <p>
+        "href" en la etiqueta "a" para definir el enlace o direccion de un archivo
+      </p>
+      <p>
+        "src" en las Etiquetas "img", "script" y "video" especifica la fuente del archivo
+      </p>
+      <p>
+        "target" en la etiqueta "a" sirve para abrir el enlace en una nueva pestaña del navegador
+      </p>
+    </section>
+
+    <section id="comentarios">
+      <h3>Comentarios</h3>
+      <p>
+        empieza con "<!-" y termina con "->" se utiliza para comentar el codigo y sea mas facil de comprender o obtener contexto para el programador o grupo de programadores, sirve solo para eso porque no es visible en el sitio wew que se esté creando, aunque si se ve en el codigo fuente. tambien sirve para desactivar algunas partes del codigo para hacer pruebas sin borrarlo. <br> los comentarios no deben ir dentro de elementos como, por ejemplo "p" porque puede romper el codigo
+      </p>
+    </section>
+
+    <section id="estructura-semantica">
+      <h3>Estructura semantica</h3>
+
+      <p>
+        "header" Encabezado general del sitio o de una sección. Suele contener el logo, título o menú.
+      </p>
+      <p>
+        "nav" Área de navegación (menú principal o enlaces internos).
+      </p>
+
+      <p>
+        "main" Contenido principal único de la página. Solo se usa una vez por página.
+      </p>
+
+      <p>
+        Agrupa contenido relacionado dentro de una página.
+      </p>
+
+      <p>
+        "article" Contenido independiente: una noticia, una entrada de blog, etc
+      </p>
+
+      <p>
+        "aside" Información secundaria: barras laterales, enlaces relacionados.
+      </p>
+
+      <p>
+        "footer" Pie de página: créditos, contacto, enlaces legales, etc.
       </p>
     </section>
   </body>
