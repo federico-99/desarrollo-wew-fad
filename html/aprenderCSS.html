@@ -2,99 +2,141 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="Aprender CSS" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>CSS</title>
   </head>
   <body>
-    <h1>herramientas css</h1>
+    <h1>Herramientas CSS</h1>
 
     <header>
       <nav>
-        <h3><a href="/index.html">Inicio</a></h3>
         <ul>
-          <li>🔹 <strong>Nivel Básico: Fundamentos</strong>
-    <ul>
-      <li>¿Qué es CSS y cómo se aplica? Introducción al lenguaje, tipos de hojas de estilo (inline, interna, externa).</li>
-      <li>Selectores básicos: uso de selectores por etiqueta, clase, ID, agrupaciones.</li>
-      <li>Sintaxis de reglas CSS: propiedades, valores, llaves <code>{}</code>, y estructura de una regla.</li>
-      <li>Colores y unidades: nombres de color, HEX, RGB, HSL. Unidades como px, %, em, rem.</li>
-      <li>Modelo de caja (Box Model): padding, border, margin, contenido, y comportamiento de los elementos.</li>
-      <li>Propiedades de texto: fuente, tamaño, color, alineación, espaciado entre letras y líneas.</li>
-      <li>Fondos y bordes: colores de fondo, imágenes, tamaños, bordes redondeados y estilos.</li>
-      <li>Display y visibilidad: block, inline, none, inline-block, visibility.</li>
-      <li>Estilos de enlaces y listas: pseudo-clases como <code>:hover</code>, personalización de listas (<code>list-style</code>).</li>
-      <li>Introducción a responsive con media queries simples: cómo cambiar estilos según el tamaño de la pantalla.</li>
-    </ul>
-  </li>
-
-  <li>🟡 <strong>Nivel Intermedio: Diseño y Organización</strong>
-    <ul>
-      <li>Selectores avanzados: combinadores (<code>&gt;</code>, <code>+</code>, <code>~</code>), atributos (<code>[type="text"]</code>), pseudo-clases como <code>:nth-child()</code>.</li>
-      <li>Herencia, cascada y especificidad: cómo se aplican los estilos y qué tiene prioridad.</li>
-      <li>Flexbox (Flexible Box Layout): diseño unidimensional, alineación, distribución, dirección de los elementos.</li>
-      <li>Grid Layout (CSS Grid): diseño bidimensional, filas, columnas, áreas, auto-placement.</li>
-      <li>Media Queries avanzadas: breakpoints múltiples, orientación, resolución, condiciones combinadas.</li>
-      <li>Transiciones y animaciones básicas: <code>transition</code>, <code>transform</code>, <code>@keyframes</code>, efectos simples al pasar el mouse.</li>
-      <li>Organización del CSS: comentarios, orden lógico de propiedades, convenciones como BEM.</li>
-      <li>Variables CSS (<code>--nombre</code>): reutilización de valores, <code>:root</code>, uso con <code>var()</code>.</li>
-      <li>Positioning: <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code>, y <code>z-index</code>.</li>
-      <li>Zonas de scroll y overflow: manejo de contenido desbordado con <code>overflow</code>, <code>scroll</code> y <code>hidden</code>.</li>
-    </ul>
-  </li>
-
-  <li>🔵 <strong>Nivel Avanzado: Interactividad y Rendimiento</strong>
-    <ul>
-      <li>Animaciones complejas con <code>@keyframes</code>: encadenamiento, control de tiempos, animaciones múltiples.</li>
-      <li>Clases dinámicas con pseudo-clases: <code>:not()</code>, <code>:is()</code>, <code>:has()</code> (con soporte moderno), efectos complejos.</li>
-      <li>Funciones y cálculos: <code>calc()</code>, <code>clamp()</code>, <code>min()</code>, <code>max()</code>. Valores dinámicos y adaptativos.</li>
-      <li>Contenedores de layout modernos: <code>container queries</code>, <code>subgrid</code> y sus aplicaciones.</li>
-      <li>Modo oscuro y temas con CSS: <code>prefers-color-scheme</code>, uso de variables CSS para temas claros/oscuros.</li>
-      <li>Accesibilidad en CSS: buen contraste, foco visible, <code>:focus-visible</code>, <code>prefers-reduced-motion</code>.</li>
-      <li>Optimización de rendimiento: reducción de reflows, uso inteligente de clases, carga crítica de estilos.</li>
-      <li>Preprocesadores (Sass, Less): introducción, anidamiento, mixins, funciones, herencia.</li>
-      <li>CSS Modules / CSS-in-JS (React, Vue): cómo aislar estilos en proyectos con frameworks modernos.</li>
-      <li>Custom properties + JavaScript: cambiar estilos dinámicamente desde JS usando variables CSS.</li>
-    </ul>
-  </li>
-</ul>
+          <li><strong>Nivel Básico: Fundamentos</strong>
+            <ul>
+              <li><a href="#que-es-css">¿Qué es CSS y cómo se aplica?</a></li>
+              <li><a href="#selectores-basicos">Selectores básicos</a></li>
+              <li><a href="#sintaxis-reglas-css">Sintaxis de reglas CSS</a></li>
+              <li><a href="#colores-unidades">Colores y unidades</a></li>
+              <li><a href="#modelo-caja">Modelo de caja (Box Model)</a></li>
+              <li><a href="#propiedades-texto">Propiedades de texto</a></li>
+              <li><a href="#fondos-bordes">Fondos y bordes</a></li>
+              <li><a href="#display-visibilidad">Display y visibilidad</a></li>
+              <li><a href="#estilos-enlaces-listas">Estilos de enlaces y listas</a></li>
+              <li><a href="#media-queries-basicas">Introducción a responsive con media queries simples</a></li>
+            </ul>
+          </li>
+          
+          <li>🟡<strong>Nivel Intermedio: Diseño y Organización</strong>
+            <ul>
+              <li><a href="#selectores-avanzados">Selectores avanzados</a></li>
+              <li><a href="#herencia-cascada">Herencia, cascada y especificidad</a></li>
+              <li><a href="#flexbox">Flexbox (Flexible Box Layout)</a></li>
+              <li><a href="#grid-layout">Grid Layout (CSS Grid)</a></li>
+              <li><a href="#media-queries-avanzadas">Media Queries avanzadas</a></li>
+              <li><a href="#transiciones-animaciones">Transiciones y animaciones básicas</a></li>
+              <li><a href="#organizacion-css">Organización del CSS</a></li>
+              <li><a href="#variables-css">Variables CSS</a></li>
+              <li><a href="#positioning">Positioning</a></li>
+              <li><a href="#overflow">Zonas de scroll y overflow</a></li>
+            </ul>
+          </li>
+          
+          <li>🔵 <strong>Nivel Avanzado: Interactividad y Rendimiento</strong>
+            <ul>
+              <li><a href="#animaciones-complejas">@keyframes y animaciones complejas</a></li>
+              <li><a href="#clases-dinamicas">Clases dinámicas con pseudo-clases</a></li>
+              <li><a href="#funciones-calculos">Funciones y cálculos</a></li>
+              <li><a href="#contenedores-layout">Contenedores de layout modernos</a></li>
+              <li><a href="#modo-oscuro-temas">Modo oscuro y temas con CSS</a></li>
+              <li><a href="#accesibilidad-css">Accesibilidad en CSS</a></li>
+              <li><a href="#optimizacion-rendimiento">Optimización de rendimiento</a></li>
+              <li><a href="#preprocesadores">Preprocesadores (Sass, Less)</a></li>
+              <li><a href="#css-modules">CSS Modules / CSS-in-JS</a></li>
+              <li><a href="#custom-properties-js">Custom properties + JavaScript</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
-
+    
     <main>
-      <h2>herramientas de CSS</h2>
+      <h2>Herramientas de CSS</h2>
 
-      <p>Veremos todo lo que es mas utilizado en css para dar estilo al html</p>
+      <p>Veremos todo lo que es más utilizado en CSS para dar estilo al HTML.</p>
 
-      <section>
-        <h3>Que es CSS?</h3>
+      <section id="que-es-css">
+        <h3>¿Qué es CSS?</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, praesentium. Hic quia qui blanditiis tempore rerum doloribus eos voluptate quas architecto. Minima similique, voluptate ad eligendi laborum ducimus facere optio.</p>
       </section>
 
-      <section>
-        <h3>Selectores Basicos</h3>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab consectetur magnam? Vero, nostrum cumque! Ex sit, eveniet aut hic veniam aspernatur optio cupiditate porro asperiores? Molestias itaque dolor iure?
-        </p>
+      <section id="selectores-basicos">
+        <h3>Selectores Básicos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab consectetur magnam? Vero, nostrum cumque! Ex sit, eveniet aut hic veniam aspernatur optio cupiditate porro asperiores? Molestias itaque dolor iure?</p>
       </section>
 
-      <section>
-        <h3>Sintaxis basico</h3>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequuntur velit, omnis facilis beatae tempore rem cupiditate error numquam consequatur aliquam ea. Provident architecto ea blanditiis, iste consequuntur rem corrupti!
-        </p>
+      <section id="sintaxis-reglas-css">
+        <h3>Sintaxis de reglas CSS</h3>
+        <p></p>
       </section>
 
-      <section>
+      <section id="colores-unidades">
         <h3>Colores y unidades</h3>
+        <p>Colores HEX (hexadecimales):</p>
+        <ul>
+          <li>Los dos primeros dígitos son rojo: <code>#ff0000</code></li>
+          <li>Los dos del medio son verde: <code>#00ff00</code></li>
+          <li>Los dos finales son azul: <code>#0000ff</code></li>
+          <li>Puede variar entre números y letras.</li>
+        </ul>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates ab veritatis excepturi in iste explicabo voluptate culpa consectetur, repellat cumque cum tempore, ut maiores placeat blanditiis quam nostrum deleniti.
-        </p>
+        <p>Color RGB, permite mezclas precisas más fácilmente:</p>
+        <ul>
+          <li>RGB significa Red, Green, Blue (Rojo, Verde, Azul).</li>
+          <li>Se define con números entre 0 y 255 para cada color.</li>
+          <li>El formato es <code>rgb(rojo, verde, azul)</code>.</li>
+        </ul>
+
+        <p>HSL (Hue, Saturation, Lightness) se define de la siguiente manera:</p>
+        <ul>
+          <li>Hue (tono): grado en el círculo cromático (0 a 360).</li>
+          <li>Saturation (saturación): porcentaje (0% a 100%).</li>
+          <li>Lightness (luminosidad): porcentaje (0% a 100%).</li>
+        </ul>
       </section>
+      
+      <section id="unidades">
+        <h3>Unidades</h3>
+        <ul>
+          <li>px = píxeles (fijo)</li>
+          <li>cm = centímetros (fijo)</li>
+          <li>em = relativo al tamaño de fuente padre</li>
+          <li>% = porcentaje relativo al contenedor</li>
+          <li>rem = relativo al tamaño de fuente raíz</li>
+          <li>vh = porcentaje de la altura de la ventana</li>
+        </ul>
+      </section>
+
+      <section id="selectores-avanzados">
+        <h3>Selectores avanzados</h3>
+        <p>Combinador: permite seleccionar elementos HTML según su relación con otros elementos (padres, hermanos, hijos, etc.).</p>
+        <ul>
+          <li>Selector descendiente: <code>div p {color: blue;}</code> aplica a todos los <code>p</code> dentro de un <code>div</code>.</li>
+          <li>Selector de hijo directo (>) <code>div > p {color: red;}</code> selecciona los <code>p</code> que son hijos directos de un <code>div</code>.</li>
+          <li>Selector de hermano adyacente (a + b): aplica al primer elemento <code>b</code> justo después de un elemento <code>a</code>.</li>
+          <li>Selector de hermanos generales (a ~ b): aplica a todos los <code>b</code> que estén después de un <code>a</code>, aunque no sean adyacentes.</li>
+        </ul>
+        <p>Resumen:</p>
+        <pre>
+div p {color: blue;}
+div > p {font-weight: bold;}
+h1 + p {font-style: italic;}
+h1 ~ p {background-color: lightyellow;}
+        </pre>
+      </section>
+      
+      <!-- Puedes agregar IDs y secciones para el resto del contenido siguiendo este patrón -->
+      
     </main>
   </body>
 </html>
